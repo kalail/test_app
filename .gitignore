@@ -1,4 +1,5 @@
 .template
+.lib
 development
 local_config.json
 identity.json
