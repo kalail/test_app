@@ -1,26 +1,23 @@
 {
-	"author": "jalonmcdonald17@gmail.com", 
-	"config_version": "2", 
-	"description": "An empty app created by default", 
+	"config_version": "2",
+	"name": "test_app",
+	"author": "kashif610@gmail.com",
+	"version": "0.1",
+	"platform_version": "v1.4",
+	"description": "An empty app created by default",
 	"modules": {
-		"contact": true, 
-		"file": true, 
-		"is": true, 
 		"logging": {
 			"level": "DEBUG"
-		}, 
-		"media": true, 
-		"prefs": true, 
-		"reload": true, 
+		},
+		"contact": true,
+		"file": true,
+		"is": true,
+		"media": true,
+		"prefs": true,
 		"request": {
-			"permissions": [
-				"http://*/*", 
-				"https://*/*"
-			]
-		}, 
-		"tools": true
-	}, 
-	"name": "SPC", 
-	"platform_version": "v1.4", 
-	"version": "0.1"
+			"permissions": ["http://*/*", "https://*/*"]
+		},
+		"tools": true,
+		"reload": true
+	}
 }
