@@ -1,15 +1,28 @@
 {
-	"author": "jalonmcdonald17@gmail.com", 
+	"author": "kashif610@gmail.com", 
 	"config_version": "2", 
-	"description": "An empty app created by default", 
+	"description": "The Connected World digital magazine", 
 	"modules": {
 		"contact": true, 
+		"display": {
+			"orientations": {
+				"android": "landscape", 
+				"ipad": "landscape", 
+				"iphone": "portrait"
+			}
+		}, 
+		"facebook": {
+			"appid": "487594284630222"
+		}, 
 		"file": true, 
+		"geolocation": true, 
 		"is": true, 
 		"logging": {
 			"level": "DEBUG"
 		}, 
 		"media": true, 
+		"message": true, 
+		"notification": true, 
 		"prefs": true, 
 		"reload": true, 
 		"request": {
@@ -18,9 +31,10 @@
 				"https://*/*"
 			]
 		}, 
-		"tools": true
+		"tools": true, 
+		"ui": true
 	}, 
-	"name": "SPC", 
+	"name": "Connected World", 
 	"platform_version": "v1.4", 
 	"version": "0.1"
 }
