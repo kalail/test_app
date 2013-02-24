@@ -11,7 +11,7 @@
       open_login();
       return;
     }
-    return alert(token);
+    // Login and get latest articles.
   };
 
   open_login = function() {
