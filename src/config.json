@@ -28,7 +28,8 @@
 		"request": {
 			"permissions": [
 				"http://*/*", 
-				"https://*/*"
+				"https://*/*",
+				"http://connectedworld-dev.herokuapp.com/app/login/*"
 			]
 		}, 
 		"tools": true, 

@@ -7,7 +7,7 @@ init = ->
 	# Set swipe handler
 	$(document).on('swipeLeft', handle_swipe_left)
 	# Set login button handler
-	$('.btn-primary').click(login); 
+	$('.btn-primary').click(login)
 
 
 # Handle a swipe to the left
@@ -32,17 +32,46 @@ login = ->
 
 
 login_success = (token_information) ->
-	# Get token information
-	access_token = token_information.access_token
-	# Save token
-	forge.prefs.set('facebook_access_token', access_token, open_index)
+	# Get facebook profile
+	forge.facebook.api(
+		'/me',
+		{
+			fields: 'name,id,username,gender,location,picture,timezone'
+		},
+		(user) ->
+			# Get facebook information
+			options =
+				url: 'http://connectedworld-dev.herokuapp.com/app/login/',
+				type: 'GET',
+				data:
+					facebook_access_token: token_information.access_token,
+					facebook_id: user.id,
+					name: user.name,
+					username: user.username,
+					gender: user.gender,
+					location: user.location.name,
+					picture: user.picture.data.url,
+					timezone: user.timezone,
+				dataType: 'json',
+
+				success: (response) ->
+					logger.log(response.new)
+					if response.new == true
+						alert('Welcome ' + response.user_name)
+					# Save token
+					forge.prefs.set('user_id', response.user_id)
+					forge.prefs.set('user_name', response.user_name)
+					forge.prefs.set('user_picture', response.user_picture, open_index)
+
+			# Post it to server
+			forge.request.ajax(options)
+	)
 
 
 login_error = (error) ->
 	# Display error
 	alert('Error: ' + error)
 
-update_user = (access_token) ->
 
 
 # Set initialize
