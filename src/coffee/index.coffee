@@ -9,8 +9,7 @@ login_or_create_login = (token) ->
 	if not token
 		open_login()
 		return
-
-	alert(token)
+	# Login and get latest articles.
 
 
 # Open login page

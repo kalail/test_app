@@ -9,9 +9,7 @@
   login_or_create_login = function(token) {
     if (!token) {
       open_login();
-      return;
     }
-    // Login and get latest articles.
   };
 
   open_login = function() {
