@@ -16,40 +16,147 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
                     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="ico/favicon.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">                            
+    <style> 
+    	.box{
+	    	padding: 4px 0px 0px 0px; 
+    	}
+    	
+    	.scrollbar{
+	    	height: 668px;  
+	    	overflow: scroll; 
+    	}
+    	
+    	body {
+	    	background-image: -webkit-linear-gradient(#ffffff 56.29%, rgba(154,154,154,0.91) 100%); 
+    	}
+    	.body{
+	    	overflow: hidden;   
+    	}
+    </style> 
   </head>
 
   <body>
 
-    <div class="container">
+	<div class="body"> 
+		
+		<img src="images/ShopHeader-Landscape.png" alt="header"> 
+	
+	
+    <div class="container-fluid">
+    
+    	<div class="row-fluid"> 
+    	
+    		<div class="span5">
+    		
+    	<!--sidebar content--> 
+    		
+    			<div class="scrollbar"> 
+    				<img src="images/Garage_500x200.png" class="box" alt="newsThumbs">
+    				<img src="images/spc_500x200.png" class="box" alt="newsThumbs">
+    				<img src="images/closed_500x200.png" class="box" alt="newsThumbs">
+    				<img src="images/nightlife_500x200.png" class="box" alt="newsThumbs">
+    				<img src="images/Garage_500x200.png" class="box" alt="newsThumbs">
+    				<img src="images/Garage_500x200.png" class="box" alt="newsThumbs">
+    				<img src="images/spc_500x200.png" class="box" alt="newsThumbs">
+    				<img src="images/closed_500x200.png" class="box" alt="newsThumbs">
+    				<img src="images/nightlife_500x200.png" class="box" alt="newsThumbs">
+    				<img src="images/Garage_500x200.png" class="box" alt="newsThumbs">
+    			</div>
+    			
+    		</div> 
+    		
+    		<div class="span7"> 
+    	<!--body content--> 
+    			<div class="span6 offset3"> 
+    				<img src="images/logo.png" alt="logo" style=" margin-top:100px; "> 
+    			</div>
+    			
+    			<div class="span7 offset4"> 
+    				<a href="#myModal" data-toggle="modal">
+    				<button class="btn btn-large btn-block btn-primary" type="button" style="margin-top:80px;">Sign In</button></a>
+    				
+    				<!--modal--> 
+    				
+    				<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    				
+	    				<div class="modal-header">
+		    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+		    				</button>
+		    				<h3 id="myModalLabel">Sign In</h3>
+		    			</div>
+		    			
+		    				<div class="modal-body">
+		    					<p> Username:</p>
+				    				<input type="text" placeholder="example@gmail.com"> 
+		    					
+				    			<p> Password:</p>
+				    				<input type="password"placeholder="password"> 
+				    			
+			    				<hr> 
+			    				
+			    				<button class="btn btn-block btn-primary" type="button">
+			    					<img src="img/FacebookButton20x20.png">  Facebook Login
+			    				</button> 
+			    			</div>
+			    			
+			    		<div class="modal-footer">
+			    		
+				    		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+				   
+				    		<button class="btn btn-success">login</button>
+				    		
+				    	</div>
+				    	
+				    </div><!--modal--> 	
+				    		
+    				<a href="#myModal" data-toggle="modal">
+    				<button class="btn btn-large btn-block" type="button" style="margin-top:30px;">Create an Account</button></a> 
+    				
+    				<!--modal--> 
+    				<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    				
+	    				<div class="modal-header">
+		    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		    					<h3 id="myModalLabel">Modal header</h3>
+		    			</div>
+		    		
+		    				<div class="modal-body">
+			    				<div class="form">
+			    					<input type="text" placeholder="First Name">
+			    					<input type="text" placeholder="Last Name">
+			    					<input type="text" placeholder="example@gmail.com">
+			    					<input type="text" placeholder="City">
+			    					<input type="text" placeholder="State">
+			    				</div> 
+			    				
+			    			</div>
+			    			
+			    		<div class="modal-footer">
+				    		<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+				    		<button class="btn btn-success">Create</button>
+				    	</div>
+				    </div><!--modal--> 	
 
-      <div class="masthead">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="login.html">Sign in</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-        <h3 class="muted">Specialty Publishing</h3>
+    			</div>
+    			
+    		</div> 
+    		
+    	</div><!--/row fluid--> 
+    	
+    </div><!--/container-fluid--> 
+    
+     <div class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="navbar-inner">
+        		<ul class="nav brand">
+        			<li>Scrolling Menu Items</li> 
+        		</ul> 
+        </div>
       </div>
 
-      <hr>
-
-      <div class="jumbotron hidden">
-        <h1>Connected World</h1>
-        <br>
-        <br>
-        <p class="lead">The industry leading tech magazine based in the midwest, now gone digital!</p>
-        <br>
-        <a class="btn btn-large btn-primary">Sign in using <b>facebook</b></a>
-      </div>
-
-
-      <div class="navbar navbar-fixed-bottom footer-custom">
-        <hr>
-        <p>&copy; Specialty Publishing Magazine 2013</p>
-      </div>
-
-    </div> <!-- /container -->
-
+    
+	</div>
+    
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

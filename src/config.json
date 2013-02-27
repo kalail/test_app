@@ -7,7 +7,7 @@
 		"display": {
 			"orientations": {
 				"android": "landscape", 
-				"ipad": "landscape", 
+				"ipad": "any", 
 				"iphone": "portrait"
 			}
 		}, 
@@ -16,7 +16,26 @@
 		}, 
 		"file": true, 
 		"geolocation": true, 
+		"icons": {
+			"ios": {
+				"114": "img/iTunes_app_icon.png", 
+				"144": "img/iTunes_app_icon.png", 
+				"512": "img/iTunes_app_icon.png", 
+				"57": "img/iTunes_app_icon.png", 
+				"72": "img/iTunes_app_icon.png", 
+				"prerendered": true
+			}
+		}, 
 		"is": true, 
+		"launchimage": {
+			"ipad": "img/Welcome-Portrait.png", 
+			"ipad-landscape": "img/Welcome-Landscape.png", 
+			"ipad-landscape-retina": "img/Welcome-Landscape.png", 
+			"ipad-retina": "img/Welcome-Portrait.png", 
+			"iphone": "img/Welcome-Portrait.png", 
+			"iphone-retina": "img/Welcome-Portrait.png", 
+			"iphone-retina4": "img/Welcome-Portrait.png"
+		}, 
 		"logging": {
 			"level": "DEBUG"
 		}, 
