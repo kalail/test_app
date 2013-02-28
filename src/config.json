@@ -7,7 +7,7 @@
 		"display": {
 			"orientations": {
 				"android": "landscape", 
-				"ipad": "any", 
+				"ipad": "landscape", 
 				"iphone": "portrait"
 			}
 		}, 
