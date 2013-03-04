@@ -33,6 +33,15 @@
     	.body{
 	    	overflow: hidden;   
     	}
+    	.accordion{
+	    	background: -webkit-linear-gradient(#000000 70.86%, rgba(0,0,0,0.71) 100%); 
+	    	position: absolute; 
+    	}
+    	.accordion a{
+	    	color: white; 
+	    	opacity: .7; 
+	    	
+    	}
     </style> 
   </head>
 
@@ -42,156 +51,174 @@
 		
 		<img src="images/ShopHeader-Landscape.png" alt="header"> 
 	
-	
-    <div class="container-fluid">
-    
-    	<div class="row-fluid"> 
-    	
-    		<div class="span5">
-    		
-    	<!--sidebar content--> 
-    		
-    			<div class="scrollbar"> 
-    				<img src="images/Garage_500x200.png" class="box" alt="newsThumbs">
-    				<img src="images/spc_500x200.png" class="box" alt="newsThumbs">
-    				<img src="images/closed_500x200.png" class="box" alt="newsThumbs">
-    				<img src="images/nightlife_500x200.png" class="box" alt="newsThumbs">
-    				<img src="images/Garage_500x200.png" class="box" alt="newsThumbs">
-    				<img src="images/Garage_500x200.png" class="box" alt="newsThumbs">
-    				<img src="images/spc_500x200.png" class="box" alt="newsThumbs">
-    				<img src="images/closed_500x200.png" class="box" alt="newsThumbs">
-    				<img src="images/nightlife_500x200.png" class="box" alt="newsThumbs">
-    				<img src="images/Garage_500x200.png" class="box" alt="newsThumbs">
-    			</div>
-    			
-    		</div> 
-    		
-    		<div class="span7"> 
-    	<!--body content--> 
-    			<div class="span6 offset3"> 
-    				<img src="images/logo.png" alt="logo" style=" margin-top:100px; "> 
-    			</div>
-    			
-    			<div class="span7 offset4"> 
-    				<a href="#myModal" data-toggle="modal">
-    				<button class="btn btn-large btn-block btn-primary" type="button" style="margin-top:80px;">Sign In</button></a>
-    				
-    				<!--modal--> 
-    				
-    				<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="container-fluid">
+	    
+	    	<div class="row-fluid"> 
+	    	
+	    		<div class="span5">
+	    		
+	    	<!--sidebar content--> 
+	    		
+	    			<div class="scrollbar"> 
+	    				<img src="images/Garage_500x200.png" class="box" alt="newsThumbs">
+	    				<img src="images/spc_500x200.png" class="box" alt="newsThumbs">
+	    				<img src="images/closed_500x200.png" class="box" alt="newsThumbs">
+	    				<img src="images/nightlife_500x200.png" class="box" alt="newsThumbs">
+	    				<img src="images/Garage_500x200.png" class="box" alt="newsThumbs">
+	    				<img src="images/Garage_500x200.png" class="box" alt="newsThumbs">
+	    				<img src="images/spc_500x200.png" class="box" alt="newsThumbs">
+	    				<img src="images/closed_500x200.png" class="box" alt="newsThumbs">
+	    				<img src="images/nightlife_500x200.png" class="box" alt="newsThumbs">
+	    				<img src="images/Garage_500x200.png" class="box" alt="newsThumbs">
+	    			</div>
+	    			
+	    		</div> 
+	    		
+	    		
+	    		
+	    		<div class="span7"> 
+	    	<!--body content--> 
+	    			<div class="span6 offset3"> 
+	    				<img src="images/logo.png" alt="logo" style=" margin-top:100px; "> 
+	    			</div>
+	    			
+	    			<div class="span7 offset4"> 
+	    				<a href="#myModal" data-toggle="modal">
+	    				<button class="btn btn-large btn-block btn-primary" type="button" style="margin-top:80px;">Sign In</button></a>
 	    				
-	    				<div class="modal-header">
-		    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
-		    				</button>
-		    				<h3 id="myModalLabel">Sign In</h3>
-		    			</div>
-		    			
-		    				<div class="modal-body">
-		    					<p> Username:</p>
-				    				<input type="text" placeholder="example@gmail.com"> 
-		    					
-				    			<p> Password:</p>
-				    				<input type="password"placeholder="password"> 
+	    				<!--modal--> 
+	    				
+	    				<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    				
+		    				<div class="modal-header">
+			    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+			    				</button>
+			    				<h3 id="myModalLabel">Sign In</h3>
+			    			</div>
+			    			
+			    				<div class="modal-body">
+			    					<p> Username:</p>
+					    				<input type="text" placeholder="example@gmail.com"> 
+			    					
+					    			<p> Password:</p>
+					    				<input type="password"placeholder="password"> 
+					    			
+				    				<hr> 
+				    				
+				    				<button class="btn btn-block btn-primary" type="button">
+				    					<img src="img/FacebookButton20x20.png" alt="facebook-icon">  Facebook Login
+				    				</button> 
+				    			</div>
 				    			
-			    				<hr> 
-			    				
-			    				<button class="btn btn-block btn-primary" type="button">
-			    					<img src="img/FacebookButton20x20.png" alt="facebook-icon">  Facebook Login
-			    				</button> 
-			    			</div>
-			    			
-			    		<div class="modal-footer">
-			    		
-				    		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-				   
-				    		<button class="btn btn-success"><a href="index.html">Login</a></button>
+				    		<div class="modal-footer">
 				    		
-				    	</div>
-				    	
-				    </div><!--modal--> 	
-				    		
-    				<a href="#myModal" data-toggle="modal">
-    				<button class="btn btn-large btn-block" type="button" style="margin-top:30px;">Create an Account</button></a> 
-    				
-    				<!--modal--> 
-    				<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+					   
+					    		<button class="btn btn-success"><a href="index.html">Login</a></button>
+					    		
+					    	</div>
+					    	
+					    </div><!--modal--> 	
+					    		
+					    		
+					    		
+					    		
+					  
+	    				<a href="#myModal" data-toggle="modal">
+	    				<button class="btn btn-large btn-block" type="button" style="margin-top:30px;">Create an Account</button></a> 
 	    				
-	    				<div class="modal-header">
-		    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-		    					<h3 id="myModalLabel">Modal header</h3>
-		    			</div>
-		    		
-		    				<div class="modal-body">
-			    				<div class="form">
-			    					<input type="text" placeholder="First Name">
-			    					<input type="text" placeholder="Last Name">
-			    					<input type="text" placeholder="example@gmail.com">
-			    					<input type="text" placeholder="City">
-			    					<input type="text" placeholder="State">
-			    				</div> 
-			    				
+	    				<!--modal--> 
+	    				<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    				
+		    				<div class="modal-header">
+			    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			    					<h3 id="myModalLabel">Modal header</h3>
 			    			</div>
-			    			
-			    		<div class="modal-footer">
-				    		<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-				    		<button class="btn btn-success">Create</button>
-				    	</div>
-				    </div><!--modal--> 	
-
-    			</div>
-    			
-    		</div> 
-    		
-    	</div><!--/row fluid--> 
-    	
-    </div><!--/container-fluid--> 
+			    		
+			    				<div class="modal-body">
+				    				<div class="form">
+				    					<input type="text" placeholder="First Name">
+				    					<input type="text" placeholder="Last Name">
+				    					<input type="text" placeholder="example@gmail.com">
+				    					<input type="text" placeholder="City">
+				    					<input type="text" placeholder="State">
+				    				</div> 
+				    				
+				    			</div>
+				    			
+				    		<div class="modal-footer">
+					    		<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+					    		<button class="btn btn-success">Create</button>
+					    	</div>
+					    </div><!--modal--> 	
+	
+	    			</div>
+	    			
+	    		</div> 
+	    		
+	    	</div><!--/row fluid--> 
+	    	
+	    </div><!--/container-fluid--> 
     
-     <div class="navbar navbar-inverse navbar-fixed-bottom">
-        <div class="navbar-inner">
-        		
-        		<div style="width: 1020px; height: 140px; overflow-y:hidden; overflow-x:scroll;">
+     <!--Navbar starts here--> 
+		
+		    
+<div class="accordion" id="accordion2">
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+				Scrolling Menu Items 
+			</a>
+		</div>
+
+		<div id="collapseOne" class="accordion-body collapse in">
+			<div class="accordion-inner">
+				<div style="width: 1020px; height: 140px; overflow-y:hidden; overflow-x:scroll;">
 
 			    <div style="width: 5000px; height: 140px">
-			    <p style="color:white; padding-left:10px; padding-top:5px;">Scrolling Menu items</p>
+			    
 			        <ul style="padding-top:opx; padding-left:5px">
 			         
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/closed_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/spc_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/nightlife_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/Garage_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/plane_500x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/closed_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/spc_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/nightlife_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/Garage_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/plane_500x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/closed_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/spc_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/nightlife_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/Garage_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/plane_500x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/closed_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/spc_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/nightlife_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/Garage_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/plane_500x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/closed_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/spc_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/nightlife_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/Garage_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/plane_500x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/closed_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/spc_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/nightlife_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/Garage_250x200.png" alt="My Image"></li>
-<li style="display: inline;"><img style="width:100px; height:100px;" src="images/plane_500x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/closed_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/spc_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/nightlife_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/Garage_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/plane_500x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/closed_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/spc_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/nightlife_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/Garage_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/plane_500x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/closed_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/spc_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/nightlife_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/Garage_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/plane_500x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/closed_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/spc_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/nightlife_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/Garage_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/plane_500x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/closed_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/spc_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/nightlife_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/Garage_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/plane_500x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/closed_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/spc_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/nightlife_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/Garage_250x200.png" alt="My Image"></li>
+						<li style="display: inline;"><img style="width:100px; height:100px;" src="images/plane_500x200.png" alt="My Image"></li>
 
 			        </ul>
 			    </div>
 			    </div>
-        </div>
-      </div>
 
+			</div>
+		</div>
+	</div>
+
+</div>
     
 
     
