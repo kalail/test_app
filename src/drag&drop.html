@@ -1,0 +1,111 @@
+<!Doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Template &middot; Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom_bootstrap.css" rel="stylesheet">
+    
+
+	<style type="text/css">
+    	
+    	/*Drag and Drop
+    	=====================*/ 
+    	#div1 {width:460px;height:220px;padding:5px;border:5px dashed #aaaaaa; margin-top: 50px; margin-left: 20px;  position: absolute;}
+    	#div1 img {width: 450; height: 210px;}
+    	#div2 {width:220px;height:220px;padding:5px;border:5px dashed #aaaaaa; margin-top: 50px; margin-left: 520px; position: absolute;}
+    	#div3 {width:220px;height:220px;padding:5px;border:5px dashed #aaaaaa; margin-top: 300px; margin-left: 20px; position: absolute;}
+    	#div4 {width:220px;height:220px;padding:5px;border:5px dashed #aaaaaa; margin-top: 300px; margin-left: 270px; position: absolute}
+    	#div5 {width:220px;height:220px;padding:5px;border:5px dashed #aaaaaa; margin-top: 300px; margin-left: 520px; position: absolute;}
+    	#div6 {width:220px;height:220px;padding:5px;border:5px dashed #aaaaaa; margin-top: 550px; margin-left: 20px; position: absolute;}
+    	#div7 {width:220px;height:220px;padding:5px;border:5px dashed #aaaaaa; margin-top: 550px; margin-left: 270px; position: absolute;}
+    	#div8 {width:220px;height:220px;padding:5px;border:5px dashed #aaaaaa; margin-top: 550px; margin-left: 520px; position: absolute}
+	
+    	/*Drag Container
+	    ======================*/
+	    #dragContainer {border: solid black 5px; height: auto; width: 105px; margin-top: 20px; margin-left: 800px; position: absolute; background: #ccc; position: absolute; background: #ccc; -webkit-border-radius: 10px;}
+	    #dragContainer img { width: 100px; height: 100px; padding: 2px;}
+
+	</style>
+	<script>
+	function allowDrop(ev)
+	{
+	ev.preventDefault();
+	}
+	
+	function drag(ev)
+	{
+	ev.dataTransfer.setData("Text",ev.target.id);
+	}
+	
+	function drop(ev)
+	{
+	ev.preventDefault();
+	var data=ev.dataTransfer.getData("Text");
+	ev.target.appendChild(document.getElementById(data));
+	}
+	</script>
+</head>
+
+<body>                                                
+
+	<p>Drag the images into the <em style="color:red">dashed</em> rectangles:</p>
+	
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+	
+	<div id="dragContainer">
+		<img id="drag1" src="images/nightlife_250x200.png" draggable="true" ondragstart="drag(event)" width="500" height="auto">
+		<img id="drag2" src="images/Garage_250x200.png" draggable="true" ondragstart="drag(event)" width="500" height="220">
+		<img id="drag3" src="images/spc_250x200.png" draggable="true" ondragstart="drag(event)" width="500" height="220">
+		<img id="drag4" src="images/plane_500x200.png" draggable="true" ondragstart="drag(event)" width="500" height="220">
+		<img id="drag5" src="images/laptop_250x200.png" draggable="true" ondragstart="drag(event)" width="500" height="220">
+		<img id="drag6" src="images/closed_250x200.png" draggable="true" ondragstart="drag(event)" width="500" height="220">
+	</div>
+	
+	<a href="index.html"><em>go home</em></a>
+	
+		    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/zepto.min.js"></script>    
+    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+</html> 
