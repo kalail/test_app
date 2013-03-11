@@ -26,7 +26,7 @@
     	.largethumb {height: 220px; width: 451px; padding: 3px;}
     	.logo {-webkit-box-reflect: below -5px -webkit-gradient(linear,left top, left bottom,from(transparent),color-stop(.1, transparent),to(rgba(255,255,255,.5)));
 	    
-	    /*Style for thumbnais
+	    /*Style for thumbnails
 		============================*/ 	
     	}
     	
@@ -58,29 +58,13 @@
     	/*Style for thumbnail large*/ 
     	
     	.story-bg-large {
-	    	background-color: #282828; 
-	    	background-position: center top;
-	    	background-repeat: no-repeat;
-	    	background-size: cover; 
-	    	position: absolute; 
-	    	width: 451px; 
-	    	height: 220px; 
-    	}
+	  background-color: #282828; background-position: center top;background-repeat: no-repeat;background-size: cover;position: absolute;width: 451px; height: 220px;}
     	
     	.story-title-byline-large {
 	    	background: none repeat scroll 0 0 rgb(0, 0, 0, 0.8);height: 60px; position: absolute;}
     	
-    	.title-large {
-	    	color: #ffffff;
-	    	font-size: 16px; 
-	    	font-weight: 600; 
-	    	height: 2.2em;
-	    	width: 440px; 
-	    	line-height: 1.2em; 
-	    	overflow: hidden;
-	    	padding: 2px 5px 5px; 
-	    	background: -webkit-linear-gradient(rgba(6,6,6,0.72) 0%, rgba(0,0,0,0.62) 49.34%); 
-    	}
+    	.title-large {color: #ffffff;font-size: 16px; font-weight: 600;height: 2.2em;width: 440px; line-height: 1.2em; overflow: hidden;padding: 2px 5px 5px; 
+	    	background: -webkit-linear-gradient(rgba(6,6,6,0.72) 0%, rgba(0,0,0,0.62) 49.34%);}
     	
     	/*Accordion
     	================*/
@@ -198,21 +182,49 @@
 <!--Starts Column Two--> 	     
 			    <div class="span3">
 			     	<div class="row">
+			     	<!--Panel
+			     	=================-->
+			     		  <div class="panel">
+				     		 
+					     		  <form class="form-search">
+					     		  	<div class="input-append">
+					     		  		<hr>
+					     		  		<input type="text" class="span7 search-query" style="margin-left:8px;">
+					     		  		<button type="submit" class="btn"> Search</button>
+					     		  	</div>
+					     		  </form>
+					     		  
+					     		  <p>The Peggy Smedley Show</p>
+					     		  <p>Editors Choice</p> 
+					     		  <p>Mobile Apps and Gadgets</p> 
+					     		  <p>Unpluggged</p> 
+					     		  
+					     </div><!--/panel--> 
+        
+				     	<p class="slide"><a href="#" class="pull-me">Manage Content</a></p>
+
+			     	
+			     	
+			     	
 			     		<h5><a class="offset4" style="color:#be1e2d;" href="login.html">Login</a> | <a style="color:#be1e2d;" href="#">Create Account</a></h5> 
 			     		 	     	
 				     	<img src="images/logo.png" alt="logo" style=" margin-top:210px;" class="logo"> 
+				     
 			     	</div>
 			     	
 			     	<div class="row">
 			     		<img src="images/bigglobe.png" alt="globe_icon" style="margin-top:125px; margin-left:25px;"> 
+			     		
 			     	</div> 
-			     	
+			     	 
+			
+			     	 
 			    </div>
 			    
 		     </div>
 		    	
 		    	
-		</div><!--/body--> 
+		</div><!--/body div--> 
 		
 <!-- Scroling Menu Items
 ===============================================================--> 	    
@@ -315,5 +327,15 @@
     <script src="js/zepto.min.js"></script>    
     <script src="js/bootstrap.js"></script>
     <script src="js/index.js"></script>
+    
+    <script>
+	    $(document).ready(function(){
+	    $('.pull-me').click(function(){
+	    $('.panel').slideToggle('slow'); 
+	    }); 
+	}); 
+    
+    </script> 	 
+   
   </body>
 </html>
